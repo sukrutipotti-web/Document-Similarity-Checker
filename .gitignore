@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+similarity_engine
+similarity_engine.exe
+.DS_Store
+.vscode/

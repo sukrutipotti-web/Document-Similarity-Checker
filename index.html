@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document Similarity Checker</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><p>DATA STRUCTURES MINI PROJECT · PHASE 2</p><h1>Document Similarity Checker</h1><p>Upload two documents and discover shared content.</p></header>
+<section class="grid">
+<article><label for="fileA">Document A</label><input id="fileA" type="file" accept=".txt,.docx,.pdf"><p class="hint">Choose a .txt, .docx or .pdf file (max 5 MB).</p></article>
+<article><label for="fileB">Document B</label><input id="fileB" type="file" accept=".txt,.docx,.pdf"><p class="hint">Choose a .txt, .docx or .pdf file (max 5 MB).</p></article>
+</section>
+<button id="go">Compare Documents</button><p id="status" role="status"></p>
+<section id="results" hidden><article class="score"><small>TEXT SIMILARITY</small><strong id="score"></strong><div class="meter"><span id="fill"></span></div><p id="meaning"></p></article>
+<div class="grid stats"><article>LCS length<strong id="lcs"></strong></article><article>Document A words<strong id="wa"></strong></article><article>Document B words<strong id="wb"></strong></article></div>
+<article><h2>Matching phrases</h2><ul id="matches"></ul></article></section>
+<footer>Similarity indicates textual overlap; it is not proof of plagiarism. Scanned/image-only PDFs are not supported.</footer>
+</main><script src="app.js"></script></body></html>
